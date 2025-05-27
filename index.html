@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSN Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f9fb;
+      color: #1f1f1f;
+    }
+    header {
+  background-color: #1c2e4a;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60px;
+
+    }
+    header img {
+      height: 50px;
+      margin-right: 1rem;
+    }
+    header .brand {
+      display: flex;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00b8d4;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      background: linear-gradient(to right, #00b8d4, #3f51b5);
+      color: white;
+      border-radius: 0 0 20px 20px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .service {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    .service h3 {
+      text-align: center;
+      color: #1c2e4a;
+      margin-bottom: 0.5rem;
+    }
+    .service p {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .service-images {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+    .service-images img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    }
+    .center-image {
+      display: block;
+      margin: 2rem auto;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    #about h2 {
+      color: #1c2e4a;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    #about p {
+      color: #333;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    footer {
+      background: #1c2e4a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="images/WhatsApp Image 2025-05-20 à 20.52.20_e9747bf2.jpg" alt="Logo SSN Services">
+      <h1>SSN Services</h1>
+    </div>
+    <nav>
+      <a href="#hero">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#team">Équipe</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="section hero">
+    <h2>Bienvenue chez SSN Services</h2>
+    <p>Des services rapides, fiables et accessibles à tous. Simplifiez votre quotidien.</p>
+  </section>
+
+  <img src="images/WhatsApp Image 2025-05-20 à 20.52.20_e9747bf2.jpg" alt="Logo SSN Services" class="center-image">
+
+  <section id="about" class="section">
+    <h2>À propos</h2>
+    <p>SSN Services est votre solution de proximité pour tous vos besoins quotidiens : transfert d'argent, impression, paiements et bien plus. Nous mettons la simplicité et la rapidité au cœur de notre service.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2 style="text-align:center; margin-bottom:2rem;">Nos Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Transfert d'argent</h3>
+        <p>Envoyez et recevez de l'argent rapidement et en toute sécurité.</p>
+        <div class="service-images">
+          <img src="images/télécharger (4).webp" alt="Transfert 1">
+          <img src="images/télécharger (5).webp" alt="Transfert 2">
+          <img src="images/télécharger (6).webp" alt="Transfert 3">
+          <img src="images/télécharger (7).webp" alt="Transfert 4">
+        </div>
+      </div>
+      <div class="service">
+        <h3>Paiement de factures</h3>
+        <p>Payez vos factures d'électricité, d'eau, et internet sans stress.</p>
+        <div class="service-images">
+          <img src="images/télécharger (2).webp" alt="Facture 1">
+          <img src="images/télécharger.webp" alt="Facture 2">
+          <img src="images/télécharger (1).webp" alt="Facture 3">
+          <img src="images/télécharger (3).webp" alt="Facture 4">
+        </div>
+      </div>
+      <div class="service">
+        <h3>Impression</h3>
+        <p>Des impressions de qualité pour tous vos documents.</p>
+        <div class="service-images">
+          <img src="images/OIP.webp" alt="Impression 1">
+          <img src="images/OIP (1).webp" alt="Impression 2">
+          <img src="images/OIP (3).webp" alt="Impression 3">
+          <img src="images/télécharger (8).webp" alt="Impression 4">
+        </div>
+      </div>
+      <div class="service">
+        <h3>Photocopies</h3>
+        <p>Copiez vos documents en toute simplicité.</p>
+        <div class="service-images">
+          <img src="images/OIP (4).webp" alt="Photocopie 1">
+          <img src="images/télécharger (9).webp" alt="Photocopie 2">
+          <img src="images/télécharger (10).webp" alt="Photocopie 3">
+          <img src="images/OIP (5).webp" alt="Photocopie 4">
+        </div>
+      </div>
+      <div class="service">
+        <h3>Crédit téléphonique</h3>
+        <p>Rechargez facilement tous vos numéros.</p>
+        <div class="service-images">
+          <img src="images/télécharger (11).webp" alt="Crédit 1">
+          <img src="images/télécharger (12).webp" alt="Crédit 2">
+          <img src="images/OIP (6).webp" alt="Crédit 3">
+          <img src="images/OIP (7).webp" alt="Crédit 4">
+        </div>
+      </div>
+      <div class="service">
+        <h3>Création de CV</h3>
+        <p>Un CV professionnel et percutant, réalisé pour vous.</p>
+        <div class="service-images">
+          <img src="images/OIP (8).webp" alt="CV 1">
+          <img src="images/télécharger (13).webp" alt="CV 2">
+          <img src="images/OIP (9).webp" alt="CV 3">
+          <img src="images/OIP (10).webp" alt="CV 4">
+        </div>
+      </div>
+      <div class="service">
+        <h3>Inscription en ligne</h3>
+        <p>Assistance pour vos inscriptions : concours, écoles, comptes...</p>
+        <div class="service-images">
+          <img src="images/télécharger (14).webp" alt="Inscription 1">
+          <img src="images/OIP (11).webp" alt="Inscription 2">
+          <img src="images/télécharger (15).webp" alt="Inscription 3">
+          <img src="images/télécharger (17).webp" alt="Inscription 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="team" class="section">
+  <h2 style="text-align:center; margin-bottom:2rem;">Notre Équipe</h2>
+  <div class="team">
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-05-20 à 21.53.01_5baedf46.jpg" alt="Membre 1">
+      <h4>Fatou Bintou Dieng</h4>
+      <p>Etudiant-LG3-ISM/Mbour</p>
+    </div>
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-05-20 à 21.53.01_81d571be.jpg" alt="Membre 2">
+      <h4>Bintou Sidibé</h4>
+      <p>Etudiant-LG3-ISM/Mbour</p>
+    </div>
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-05-20 à 21.53.01_b3d0aa5d.jpg" alt="Membre 3">
+      <h4>Awa Senghor</h4>
+      <p>Etudiant-LG3-ISM/Mbour</p>
+    </div>
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-05-20 à 21.53.02_da3a4d96.jpg" alt="Membre 4">
+      <h4>Hapsa Tall</h4>
+      <p>Etudiant-LG3-ISM/Mbour</p>
+    </div>
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-05-20 à 22.09.55_e5a8afd7.jpg" alt="Membre 5">
+      <h4>Ndeye Ndatté Ndoye</h4>
+      <p>Etudiant-LG3-ISM/Mbour</p>
+    </div>
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-05-21 à 00.30.42_df76fbba.jpg" alt="Membre 6">
+      <h4>Mama Basse</h4>
+      <p>Etudiant-LG3-ISM/Mbour</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="section hero">
+    <h2>Contactez-nous</h2>
+    <p>Téléphone : +221 78 316 52 64 / 77 386 53 65</p>
+    <p>Email : SSNServices@gmail.com</p>
+    <p>Adresse : Mbour, Sénégal</p>
+  </section>
+
+  <footer>
+    &copy; 2025 SSN Services - Tous droits réservés
+  </footer>
+
+</body>
+</html>
