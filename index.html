@@ -17,18 +17,16 @@
       color: #1f1f1f;
     }
     header {
-  background-color: #1c2e4a;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 60px;
-
+      background-color: #1c2e4a;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
     header img {
       height: 50px;
@@ -41,6 +39,7 @@
     nav {
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
@@ -102,26 +101,24 @@
       border-radius: 8px;
     }
     .team {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.member {
-  text-align: center;
-}
-
-.member img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  border-radius: 50%;
-  margin-bottom: 0.5rem;
-  border: 3px solid white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .member {
+      text-align: center;
+    }
+    .member img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      border: 3px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .center-image {
       display: block;
@@ -146,11 +143,23 @@
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+      .dev-credit {
+  text-align: center;
+  font-size: 0.75em;
+  color: #aaa;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       nav {
         flex-direction: column;
         align-items: center;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -254,15 +263,14 @@
           <img src="images/télécharger (15).webp" alt="Inscription 3">
           <img src="images/télécharger (17).webp" alt="Inscription 4">
         </div>
-      </div>
+      <!-- Services cards here (same as before) -->
     </div>
   </section>
 
-
-
   <section id="team" class="section">
-  <h2 style="text-align:center; margin-bottom:2rem;">Notre Équipe</h2>
-  <div class="team">
+    <h2 style="text-align:center; margin-bottom:2rem;">Notre Équipe</h2>
+    <div class="team">
+      <div class="team">
     <div class="member">
       <img src="images/WhatsApp Image 2025-05-20 à 21.53.01_5baedf46.jpg" alt="Membre 1">
       <h4>Fatou Bintou Dieng</h4>
@@ -293,9 +301,9 @@
       <h4>Mama Basse</h4>
       <p>Etudiant-LG3-ISM/Mbour</p>
     </div>
-  </div>
-</section>
-
+      <!-- Team members here (same as before) -->
+    </div>
+  </section>
 
   <section id="contact" class="section hero">
     <h2>Contactez-nous</h2>
@@ -303,6 +311,12 @@
     <p>Email : SSNServices@gmail.com</p>
     <p>Adresse : Mbour, Sénégal</p>
   </section>
+  <!-- Crédit développeur positionné à la fin du footer -->
+  <div class="dev-credit">
+    Développé par Doudou Ndoye / <a href="tel:+221783866005">+221 78 386 60 05</a>
+ / <a href="mailto:doudoundoye798@gmail.com">doudoundoye798@gmail.com</a>
+  </div>
+</footer>
 
   <footer>
     &copy; 2025 SSN Services - Tous droits réservés
